@@ -6,7 +6,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "",
+  "homepage": "https://github.com/kwp-lab/picgo-plugin-vikadata",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p .",
@@ -15,10 +15,16 @@
     "minor": "npm version minor && git push origin master && git push origin --tags",
     "major": "npm version major && git push origin master && git push origin --tags"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kwp-lab/picgo-plugin-vikadata.git"
+  },
   "keywords": [
     "picgo",
     "picgo-gui-plugin",
-    "picgo-plugin"
+    "picgo-plugin",
+    "vikadata",
+    "vikadata-api"
   ],
   "author": "ifidea",
   "license": "MIT",
