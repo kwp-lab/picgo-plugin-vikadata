@@ -1,6 +1,6 @@
 {
   "name": "picgo-plugin-vikadata",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "将图片上传到维格表",
   "main": "dist/index.js",
   "publishConfig": {
@@ -29,16 +29,18 @@
   "author": "ifidea",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^10.10.1",
-    "picgo": "^1.4.0",
-    "tslint": "^5.10.0",
-    "tslint-config-standard": "^7.1.0",
-    "typescript": "^3.7.3",
-    "eslint": "^5.0.1",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0"
+    "@types/node": "16.9.1",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "picgo": "^1.5.0-alpha.13",
+    "typescript": "^4.8.4",
+    "eslint": "^8.25.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.1.0"
   }
 }

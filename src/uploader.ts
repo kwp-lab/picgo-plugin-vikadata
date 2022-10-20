@@ -1,4 +1,4 @@
-import { IPicGo, IImgInfo } from 'picgo/dist/src/types'
+import { IPicGo, IImgInfo } from 'picgo/dist/types/index'
 
 export default class Uploader {
   async handle(ctx: IPicGo) {
@@ -123,7 +123,7 @@ export default class Uploader {
     
     return ctx.request({
       method: "POST",
-      uri: `https://api.vika.cn/fusion/v1/datasheets/${config.datasheetId}/attachments`,
+      url: `https://api.vika.cn/fusion/v1/datasheets/${config.datasheetId}/attachments`,
       headers: {
         'Authorization': `Bearer ${config.apiToken}`
       },
@@ -150,10 +150,10 @@ export default class Uploader {
     return this.insertRecord(ctx, config, postData)
   }
 
-  insertRecord = async (ctx: IPicGo,  config:IVikaConfig, postData: any) => {
+  insertRecord = async (ctx: IPicGo,  config:IVikaConfig, postData: any):Promise<IVikaApiNormalResult> => {
     return ctx.request({
       method: "POST",
-      uri: `https://api.vika.cn/fusion/v1/datasheets/${config.datasheetId}/records`,
+      url: `https://api.vika.cn/fusion/v1/datasheets/${config.datasheetId}/records`,
       headers: {
         'Authorization': `Bearer ${config.apiToken}`,
         'Content-Type': 'application/json'

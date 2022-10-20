@@ -1,10 +1,11 @@
-import picgo from 'picgo'
+const picgo = require('picgo')
 import Uploader from './uploader'
+
 
 const uploader = new Uploader()
 
 
-export = (ctx: picgo) => {
+export = (ctx: typeof picgo) => {
   const config = () => {
     let userConfig:IVikaConfig = ctx.getConfig('picBed.vika')
 
