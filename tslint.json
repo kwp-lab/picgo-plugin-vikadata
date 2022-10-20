@@ -8,7 +8,6 @@
       "mocha",
       "chai",
       "jest"
-    ],
-    "noImplicitAny": true
+    ]
   }
 }

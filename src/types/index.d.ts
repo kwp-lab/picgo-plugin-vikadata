@@ -32,8 +32,8 @@ interface IVikaAttachmentUploadResult {
 }
 
 interface IVikaApiNormalResult {
-    code?: number,
-    success?: boolean,
-    message?: string,
+    code: number,
+    success: boolean,
+    message: string,
     data: any
 }
