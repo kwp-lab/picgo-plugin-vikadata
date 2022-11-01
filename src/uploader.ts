@@ -123,7 +123,7 @@ export default class Uploader {
     
     return ctx.request({
       method: "POST",
-      uri: `https://api.vika.cn/fusion/v1/datasheets/${config.datasheetId}/attachments`,
+      url: `https://api.vika.cn/fusion/v1/datasheets/${config.datasheetId}/attachments`,
       headers: {
         'Authorization': `Bearer ${config.apiToken}`
       },
@@ -153,7 +153,7 @@ export default class Uploader {
   insertRecord = async (ctx: IPicGo,  config:IVikaConfig, postData: any) => {
     return ctx.request({
       method: "POST",
-      uri: `https://api.vika.cn/fusion/v1/datasheets/${config.datasheetId}/records`,
+      url: `https://api.vika.cn/fusion/v1/datasheets/${config.datasheetId}/records`,
       headers: {
         'Authorization': `Bearer ${config.apiToken}`,
         'Content-Type': 'application/json'

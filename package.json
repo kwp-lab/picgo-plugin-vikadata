@@ -1,6 +1,6 @@
 {
   "name": "picgo-plugin-vikadata",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "将图片上传到维格表",
   "main": "dist/index.js",
   "publishConfig": {
